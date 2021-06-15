@@ -356,9 +356,13 @@ button:focus {
   }
 }
 #topCover {
-  background: #f65b66;
+  background: url("../background.svg");
   box-shadow: 0px -10px 20px 2px rgba(120,120,120,0.2) inset;
   min-height: initial;
+  padding-top: 72px;
+  height: 300px;
+  background-position-y: bottom;
+  background-size: cover;
 }
 #topCover #appTitle {
   color: #fff;
@@ -369,11 +373,21 @@ button:focus {
 }
 #topCover #coverLogo {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin-bottom: 10px;
 }
-#topCover #coverLogo img {
-  width: 200px;
+#topCover #coverLogo #dlLogo {
+  height: 40px;
+}
+#topCover #coverLogo #laLogo {
+  height: 26px;
+}
+#topCover #coverLogo .split {
+  margin: 0 12px;
+  color: #fff;
 }
 .footer {
   background-color: #333;

@@ -1,7 +1,11 @@
 #topCover
-  background $theme-color
+  background: url("../background.svg")
   box-shadow: 0px -10px 20px 2px rgba(120,120,120,0.2) inset
   min-height initial
+  padding-top: 72px
+  height: 300px
+  background-position-y: bottom
+  background-size: cover
   #appTitle
     color white
     margin 0px
@@ -10,7 +14,15 @@
     white-space nowrap
   #coverLogo
     text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
     width: 100%
     margin-bottom: 10px
-    img
-      width: 200px
+    #dlLogo
+      height: 40px
+    #laLogo
+      height: 26px
+    .split
+      margin: 0 12px
+      color: white
