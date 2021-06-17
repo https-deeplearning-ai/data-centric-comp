@@ -23,7 +23,7 @@ mixin model_display(group, is_test)
     each model in group
       tr
         if is_test
-          td 
+          td
             p #{model.rank}
             span.date.label.label-default #{moment.unix(model.date).format('MMM DD, YYYY')}
         td(style="word-break:break-word;")
@@ -44,40 +44,26 @@ block content
         .col-md-5
           .infoCard
             .infoBody
-              .infoHeadline
-                h2 What is Data-Centric AI?
-              p 
-                span
-                | Here at Landing AI we heavily utilize data-centric approaches to improve the performance of our machine learning models. These include techniques such as fixing incorrect labels or ambiguous labels, adding data for side cases tuning, adding data augmentation techniques, etc. We have seen this data centric approach used widely across AI problems in industry yet scarcely examined in academics, so we created this competition to compare and improve data-centric approaches to improving machine learning model performance.
-              ul.list-unstyled
-                li
-                  a.btn.actionBtn(href="https://www.youtube.com/watch?v=06-AZXmwHjo") Model-centric to Data-centric AI
+              video(controls width="100%" poster="./poster.png")
+                source(src="https://data-centric-ml-competition.s3.us-east-2.amazonaws.com/guide.mp4" type="video/mp4")
               p
               .infoHeadline
-                h2 Getting Started
+                h2 About the competition
               p
-                | Here's a few resources to help you get started with the data-centric competition. Download a copy of the dataset and labels
-                ul.list-unstyled
-                  li
-                    a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/bundles/0x673a2d87f692439a9ab6b4603e9fcc35", download)
-                      | Dataset
-                  li
-                    a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/bundles/0xdd93233952fc4997a07638776e1cd072", download)
-                      | Labels
-                    
-              p To evaluate your dataset we have also made available the prediction/evaluation script we will use for official evaluation
-                ul.list-unstyled
-                  li
-                    a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/bundles/0x6bdf9e3299904351ad6eecc9c7f9567d/contents/blob/", download)
-                      | Prediction Script 
-              p Once you built a dataset that you like, you can submit it to get official scores on dev and hidden test set.
-              a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/worksheets/0x7a8721f11e61436e93ac8f76da83f0e6/")
-                | Submission Tutorial
+                span A collaboration between DeepLearning.AI and Landing AI, the Data-Centric AI Competition aims to elevate data-centric approaches to improving the performance of machine learning models. In most machine learning competitions, you are asked to build a high-performance model given a fixed dataset. However, machine learning has matured to the point that high-performance model architectures are widely available, while approaches to engineering datasets have lagged. The Data-Centric AI Competition inverts the traditional format and instead asks your to improve a dataset given a fixed model. We will provide you with a dataset to improve by applying data-centric techniques such as fixing incorrect labels, adding examples that represent edge cases, apply data augmentation, etc. Contestants must submit their altered dataset for evaluation by September 4, 2021. (We picked this date because it is the birthday of John McCarthy, who had coined the term artificial intelligence!) The top three winners from each of the two categories (Best Performance Overall and Most Innovative) will be invited to a private event with Andrew Ng to share ideas about how to grow the data-centric movement, and will be highlighted in The Batch and other DeepLearning.AI and Landing AI channels. Good luck!
+              p
               .infoHeadline
                 h2 Have Questions?
-              p Ask us questions on Discourse
-            .infoSubheadline
-              include includes/github
+              p Join us on Discourse to ask us questions and connect with other competitors!
+              p For new Discourse users, please click here (http://bit.ly/dlai-competition) to create an account. After you sign in, you’ll find a “Competitions” category on the home page;
+              p For existing users, please click here( https://discourse.deeplearning.ai/g), log in, find the "Data-centric AI Competition Participants" group and join.
+              a.btn.actionBtn.inverseBtn(href='http://bit.ly/dlai-competition' target="_blank") New Discourse User
+              a.btn.actionBtn.inverseBtn(href="https://discourse.deeplearning.ai/g" target="_blank") Existing Discourse User
+              p
+              .infoHeadline
+                h2 Resources
+              p Check out Andrew Ng's talk on shifting from a Model-Centric approach to a Data-Centric approach to AI:
+                a(href='https://www.youtube.com/watch?v=06-AZXmwHjo&ab_channel=DeepLearningAI' targe) MLOps: From Model-centric to Data-centric AI
         .col-md-7
           .infoCard
             .infoBody
