@@ -9,7 +9,7 @@
                 {
                     "child_path": "evaluate.py",
                     "parent_path": "",
-                    "parent_uuid": "0x6f92c3e6c2b849b284b39e6854fb16a0"
+                    "parent_uuid": "0x045df721ff2a436d814a011421f7a340"
                 },
                 {
                     "child_path": "test",
@@ -58,50 +58,43 @@
     "leaderboard": [
         {
             "bundle": {
-                "args": "run evaluate.py:0x6f92c3e6c2b849b284b39e6854fb16a0 test:0x0b792c7dbeb14c82bf98978389a8eb85 predictions.json:0x21c2ea46f94f4b2b932d3b10610457ea \"python evaluate.py predictions.json test\" --request-cpus 1 --request-docker-image jupyter/tensorflow-notebook --request-memory 2g",
+                "args": "run evaluate.py:0x045df721ff2a436d814a011421f7a340 test:0x0b792c7dbeb14c82bf98978389a8eb85 predictions.json:0xd01853bbde2540b88a01b3820aee86b0 \"python evaluate.py predictions.json test\" --request-cpus 1 --request-docker-image jupyter/tensorflow-notebook --request-memory 2g",
                 "bundle_type": "run",
                 "command": "python evaluate.py predictions.json test",
-                "data_hash": "0x4abb3e8a68d8d79578e71e3c2bd94fe72878605b",
+                "data_hash": null,
                 "dependencies": [
                     {
                         "child_path": "evaluate.py",
-                        "child_uuid": "0x6061885b2f74429d98b8aa89a16049e9",
+                        "child_uuid": "0x5115a3fb16254f2cadf965e7125d88c8",
                         "parent_name": "evaluate.py",
                         "parent_path": "",
-                        "parent_uuid": "0x6f92c3e6c2b849b284b39e6854fb16a0"
+                        "parent_uuid": "0x045df721ff2a436d814a011421f7a340"
                     },
                     {
                         "child_path": "test",
-                        "child_uuid": "0x6061885b2f74429d98b8aa89a16049e9",
+                        "child_uuid": "0x5115a3fb16254f2cadf965e7125d88c8",
                         "parent_name": "test",
                         "parent_path": "",
                         "parent_uuid": "0x0b792c7dbeb14c82bf98978389a8eb85"
                     },
                     {
                         "child_path": "predictions.json",
-                        "child_uuid": "0x6061885b2f74429d98b8aa89a16049e9",
-                        "parent_name": "DeepLearning.AI-baseline-predict",
+                        "child_uuid": "0x5115a3fb16254f2cadf965e7125d88c8",
+                        "parent_name": "DeepLearning.AI-sample_submission-predict",
                         "parent_path": "",
-                        "parent_uuid": "0x21c2ea46f94f4b2b932d3b10610457ea"
+                        "parent_uuid": "0xd01853bbde2540b88a01b3820aee86b0"
                     }
                 ],
                 "frozen": null,
-                "id": "0x6061885b2f74429d98b8aa89a16049e9",
+                "id": "0x5115a3fb16254f2cadf965e7125d88c8",
                 "is_anonymous": false,
                 "metadata": {
                     "actions": [],
                     "allow_failed_dependencies": false,
-                    "cpu_usage": 0.0,
-                    "created": 1623888177,
-                    "data_size": 9019,
-                    "description": "{\"submit_id\": \"0x1507251ed79c4a48ba7660d89426466b\", \"submitter_id\": \"0xc4d5327b6ec3447f956a334fde285eaa\", \"predict_id\": \"0x21c2ea46f94f4b2b932d3b10610457ea\"}",
-                    "docker_image": "jupyter/tensorflow-notebook@sha256:960351dcb9da1d5b57f5d57c32a8295a3231a28248b71491aba4f79a01e36ddd",
+                    "created": 1623994480,
+                    "description": "{\"submit_id\": \"0xe0c4a2a7a7e6428fa1363717137751da\", \"submitter_id\": \"0xc4d5327b6ec3447f956a334fde285eaa\", \"predict_id\": \"0xd01853bbde2540b88a01b3820aee86b0\"}",
                     "exclude_patterns": [],
-                    "exitcode": 0,
-                    "last_updated": 1623889338,
-                    "memory_usage": 0.0,
-                    "name": "DeepLearning.AI-baseline-results",
-                    "remote": "f92d31190804-b71c559de2ad4f4ba2034a1a89238086",
+                    "name": "DeepLearning.AI-sample_submission-results",
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "jupyter/tensorflow-notebook",
@@ -111,18 +104,9 @@
                     "request_priority": 0,
                     "request_queue": "",
                     "request_time": "",
-                    "run_status": "Finished",
-                    "started": 1623889280,
                     "tags": [
                         "eval-mnist-roman"
-                    ],
-                    "time": 4.128306,
-                    "time_cleaning_up": 9.282365798950195,
-                    "time_preparing": 15.781488180160522,
-                    "time_running": 11.305572986602783,
-                    "time_system": 0.0,
-                    "time_uploading_results": 18.443530797958374,
-                    "time_user": 0.0
+                    ]
                 },
                 "owner": {
                     "id": "0xc4d5327b6ec3447f956a334fde285eaa",
@@ -130,15 +114,15 @@
                 },
                 "permission": 2,
                 "permission_spec": "all",
-                "state": "ready",
-                "uuid": "0x6061885b2f74429d98b8aa89a16049e9"
+                "state": "created",
+                "uuid": "0x5115a3fb16254f2cadf965e7125d88c8"
             },
             "scores": {
-                "accuracy": 0.10867768595041322
+                "accuracy": 0.6442148760330578
             },
             "submission": {
-                "created": 1623888077,
-                "description": "Baseline (DeepLearning.AI) https://www.deeplearning.ai/",
+                "created": 1623994260,
+                "description": "sample_submission (DeepLearning.AI) https://www.deeplearning.ai/",
                 "num_period_submissions": 1,
                 "num_total_submissions": 1,
                 "public": true,
@@ -146,5 +130,5 @@
             }
         }
     ],
-    "updated": 1623889624.407957
+    "updated": 1623994493.288386
 }
