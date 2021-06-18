@@ -56,7 +56,7 @@ var parseCompEntries = function (comp_file) {
         entry.model_name = regex_match[1].trim();
         entry.institution = regex_match[2].trim();
         if (regex_match[3].lastIndexOf('http') !== -1) {
-          entry.link = regex_match[4].trim()
+          entry.link = regex_match[3].trim()
         }
       } else {
         entry.model_name = description.substr(0, description.lastIndexOf('(')).trim()
