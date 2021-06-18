@@ -227,13 +227,16 @@
 .infoCard .infoBody {
   padding: 30px;
 }
+.infoCard .infoBody p {
+  margin: 15px 0px;
+}
 .infoCard .infoBody >.infoHeadline {
   margin: 15px 0px;
 }
 .infoCard .infoBody >.infoHeadline h1,
 .infoCard .infoBody >.infoHeadline h2,
 .infoCard .infoBody >.infoHeadline p {
-  margin: 5px 0px;
+  margin: 15px 0px;
   font-weight: 600;
   color: #333;
 }
@@ -420,7 +423,8 @@ a,
 span,
 pre {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14pt;
+  font-size: 12pt;
+  line-height: 1.5;
 }
 h1,
 h2 {
