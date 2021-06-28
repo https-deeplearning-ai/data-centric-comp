@@ -20,6 +20,14 @@ mixin model_display(group, is_test)
       th Model
       th Accuracy
     - var largest_acc = Math.max.apply(null, group.map(function (model) { return model.acc; }))
+    - var baseline_acc = 0.64421
+      tr.baseline-row
+        td
+          td
+            | Baseline
+            p.institution DeepLearning.AI
+            a(href="https://www.deeplearning.ai/") (https://www.deeplearning.ai)
+            td #{baseline_acc}
     each model in group
       tr
         if is_test
