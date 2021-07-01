@@ -236,6 +236,95 @@
         },
         {
             "bundle": {
+                "args": "run evaluate.py:0x045df721ff2a436d814a011421f7a340 test:0x0b792c7dbeb14c82bf98978389a8eb85 predictions.json:0xa1597806524d489597de4a551677c671 \"python evaluate.py predictions.json test\" --request-cpus 1 --request-docker-image jupyter/tensorflow-notebook --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate.py predictions.json test",
+                "data_hash": "0xc50837e7b10c656a89cc92813e76866d7f4f2ce3",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x1b1953c05fa2474ea7a7546201d04580",
+                        "parent_name": "evaluate.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x045df721ff2a436d814a011421f7a340"
+                    },
+                    {
+                        "child_path": "test",
+                        "child_uuid": "0x1b1953c05fa2474ea7a7546201d04580",
+                        "parent_name": "test",
+                        "parent_path": "",
+                        "parent_uuid": "0x0b792c7dbeb14c82bf98978389a8eb85"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x1b1953c05fa2474ea7a7546201d04580",
+                        "parent_name": "sid4sal-sub-1-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xa1597806524d489597de4a551677c671"
+                    }
+                ],
+                "frozen": null,
+                "id": "0x1b1953c05fa2474ea7a7546201d04580",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "cpu_usage": 0.0,
+                    "created": 1624902317,
+                    "data_size": 9018,
+                    "description": "{\"submit_id\": \"0xb7d18993fbe34db3800ad63f47886c16\", \"submitter_id\": \"0x1bfcfd1d6dad4b07a1e19a09b42e7141\", \"predict_id\": \"0xa1597806524d489597de4a551677c671\"}",
+                    "docker_image": "jupyter/tensorflow-notebook@sha256:268ac594b89c8b5f6066e3e367eb8a7fe8e1174f3ea8e62a22fa52d7ae8b325d",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1624908217,
+                    "memory_usage": 0.0,
+                    "name": "sid4sal-sub-1-results",
+                    "remote": "aa017bec7f4a-a568376a6f244b99b2bf254268d9c5d9",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "jupyter/tensorflow-notebook",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1624908162,
+                    "tags": [
+                        "eval-mnist-roman"
+                    ],
+                    "time": 5.568903,
+                    "time_cleaning_up": 9.19709038734436,
+                    "time_preparing": 15.728811740875244,
+                    "time_running": 11.212822675704956,
+                    "time_system": 0.0,
+                    "time_uploading_results": 17.745100021362305,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "0xc4d5327b6ec3447f956a334fde285eaa",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x1b1953c05fa2474ea7a7546201d04580"
+            },
+            "scores": {
+                "accuracy": 0.6867768595041323
+            },
+            "submission": {
+                "created": 1624205344,
+                "description": "sub-1 (IIT Bombay)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "sid4sal"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate.py:0x045df721ff2a436d814a011421f7a340 test:0x0b792c7dbeb14c82bf98978389a8eb85 predictions.json:0xb83c208f32984d0696e2c43081a332ae \"python evaluate.py predictions.json test\" --request-cpus 1 --request-docker-image jupyter/tensorflow-notebook --request-memory 2g",
                 "bundle_type": "run",
                 "command": "python evaluate.py predictions.json test",
@@ -1018,9 +1107,276 @@
                 "created": 1624005952,
                 "description": "sample_submission (Roman Glushko) https://www.romaglushko.com",
                 "num_period_submissions": 0,
-                "num_total_submissions": 2,
+                "num_total_submissions": 1,
                 "public": true,
                 "user_name": "roma.glushko"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0x045df721ff2a436d814a011421f7a340 test:0x0b792c7dbeb14c82bf98978389a8eb85 predictions.json:0x4747d0914fa749a7b77677e6f75314ad \"python evaluate.py predictions.json test\" --request-cpus 1 --request-docker-image jupyter/tensorflow-notebook --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate.py predictions.json test",
+                "data_hash": "0x27ddea0e41dfff945fcd08ab6a520771ceec76d5",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0xd09d2bfdf2d74c0684b7cd62bff8de79",
+                        "parent_name": "evaluate.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x045df721ff2a436d814a011421f7a340"
+                    },
+                    {
+                        "child_path": "test",
+                        "child_uuid": "0xd09d2bfdf2d74c0684b7cd62bff8de79",
+                        "parent_name": "test",
+                        "parent_path": "",
+                        "parent_uuid": "0x0b792c7dbeb14c82bf98978389a8eb85"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xd09d2bfdf2d74c0684b7cd62bff8de79",
+                        "parent_name": "as3nsi0-sample_submission-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x4747d0914fa749a7b77677e6f75314ad"
+                    }
+                ],
+                "frozen": null,
+                "id": "0xd09d2bfdf2d74c0684b7cd62bff8de79",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "cpu_usage": 0.0,
+                    "created": 1624902252,
+                    "data_size": 9026,
+                    "description": "{\"submit_id\": \"0x145b63632dbd4c5fbf6321d1ba181b86\", \"submitter_id\": \"0xdd47ef17fd584ce98655ee441a92aaf4\", \"predict_id\": \"0x4747d0914fa749a7b77677e6f75314ad\"}",
+                    "docker_image": "jupyter/tensorflow-notebook@sha256:268ac594b89c8b5f6066e3e367eb8a7fe8e1174f3ea8e62a22fa52d7ae8b325d",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1624907146,
+                    "memory_usage": 0.0,
+                    "name": "as3nsi0-sample_submission-results",
+                    "remote": "e1ed303bce33-fb8de4f3dbef4c618fcf6788105bb7dc",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "jupyter/tensorflow-notebook",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1624907033,
+                    "tags": [
+                        "eval-mnist-roman"
+                    ],
+                    "time": 4.1235,
+                    "time_cleaning_up": 8.15483808517456,
+                    "time_preparing": 76.85610914230347,
+                    "time_running": 10.156698226928711,
+                    "time_system": 0.0,
+                    "time_uploading_results": 16.312888860702515,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "0xc4d5327b6ec3447f956a334fde285eaa",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xd09d2bfdf2d74c0684b7cd62bff8de79"
+            },
+            "scores": {
+                "accuracy": 0.6446280991735537
+            },
+            "submission": {
+                "created": 1624183591,
+                "description": "sample_submission (as3nsi0)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "as3nsi0"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0x045df721ff2a436d814a011421f7a340 test:0x0b792c7dbeb14c82bf98978389a8eb85 predictions.json:0x2540c6023fdb4a969a1f291f7a46c834 \"python evaluate.py predictions.json test\" --request-cpus 1 --request-docker-image jupyter/tensorflow-notebook --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate.py predictions.json test",
+                "data_hash": "0x286f8ccdcc0de3b06c850d4d321f68708a8db39f",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0xef90932ceb124f3aac1ea58035f5cf9b",
+                        "parent_name": "evaluate.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x045df721ff2a436d814a011421f7a340"
+                    },
+                    {
+                        "child_path": "test",
+                        "child_uuid": "0xef90932ceb124f3aac1ea58035f5cf9b",
+                        "parent_name": "test",
+                        "parent_path": "",
+                        "parent_uuid": "0x0b792c7dbeb14c82bf98978389a8eb85"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xef90932ceb124f3aac1ea58035f5cf9b",
+                        "parent_name": "ximua00-sample_submission-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x2540c6023fdb4a969a1f291f7a46c834"
+                    }
+                ],
+                "frozen": null,
+                "id": "0xef90932ceb124f3aac1ea58035f5cf9b",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "cpu_usage": 0.0,
+                    "created": 1624902274,
+                    "data_size": 9026,
+                    "description": "{\"submit_id\": \"0xda1f1c710e634c1586870be8d01bb2a7\", \"submitter_id\": \"0x57961daa1d7445c897295effc18086f5\", \"predict_id\": \"0x2540c6023fdb4a969a1f291f7a46c834\"}",
+                    "docker_image": "jupyter/tensorflow-notebook@sha256:268ac594b89c8b5f6066e3e367eb8a7fe8e1174f3ea8e62a22fa52d7ae8b325d",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1624907153,
+                    "memory_usage": 0.0,
+                    "name": "ximua00-sample_submission-results",
+                    "remote": "83a35faa4511-5c803bb4f4de42819fceb7f13353d6cb",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "jupyter/tensorflow-notebook",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1624907105,
+                    "tags": [
+                        "eval-mnist-roman"
+                    ],
+                    "time": 4.671388,
+                    "time_cleaning_up": 5.930150032043457,
+                    "time_preparing": 13.66077995300293,
+                    "time_running": 8.197835922241211,
+                    "time_system": 0.0,
+                    "time_uploading_results": 16.46782374382019,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "0xc4d5327b6ec3447f956a334fde285eaa",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xef90932ceb124f3aac1ea58035f5cf9b"
+            },
+            "scores": {
+                "accuracy": 0.6446280991735537
+            },
+            "submission": {
+                "created": 1624192812,
+                "description": "sample-submission",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "ximua00"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0x045df721ff2a436d814a011421f7a340 test:0x0b792c7dbeb14c82bf98978389a8eb85 predictions.json:0xecf28667736649b5a0ef13c0568b3c85 \"python evaluate.py predictions.json test\" --request-cpus 1 --request-docker-image jupyter/tensorflow-notebook --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate.py predictions.json test",
+                "data_hash": "0x5480a3badc76ef5b9faad5b6dc74a76ecda84f7e",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x77eb35409ff74d418bc7766894aab440",
+                        "parent_name": "evaluate.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x045df721ff2a436d814a011421f7a340"
+                    },
+                    {
+                        "child_path": "test",
+                        "child_uuid": "0x77eb35409ff74d418bc7766894aab440",
+                        "parent_name": "test",
+                        "parent_path": "",
+                        "parent_uuid": "0x0b792c7dbeb14c82bf98978389a8eb85"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x77eb35409ff74d418bc7766894aab440",
+                        "parent_name": "kommalapatisahil-data-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xecf28667736649b5a0ef13c0568b3c85"
+                    }
+                ],
+                "frozen": null,
+                "id": "0x77eb35409ff74d418bc7766894aab440",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "cpu_usage": 0.0,
+                    "created": 1624902397,
+                    "data_size": 9026,
+                    "description": "{\"submit_id\": \"0x3265fbde542b403c8c4d6f2c6f0eab86\", \"submitter_id\": \"0x1edf4da0917f4983a5b96f4f8d61ffce\", \"predict_id\": \"0xecf28667736649b5a0ef13c0568b3c85\"}",
+                    "docker_image": "jupyter/tensorflow-notebook@sha256:268ac594b89c8b5f6066e3e367eb8a7fe8e1174f3ea8e62a22fa52d7ae8b325d",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1624908607,
+                    "memory_usage": 0.0,
+                    "name": "kommalapatisahil-data-results",
+                    "remote": "83a35faa4511-5c803bb4f4de42819fceb7f13353d6cb",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "jupyter/tensorflow-notebook",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1624908551,
+                    "tags": [
+                        "eval-mnist-roman"
+                    ],
+                    "time": 4.60019,
+                    "time_cleaning_up": 9.194261312484741,
+                    "time_preparing": 15.746198177337646,
+                    "time_running": 11.21733283996582,
+                    "time_system": 0.0,
+                    "time_uploading_results": 18.380377054214478,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "0xc4d5327b6ec3447f956a334fde285eaa",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x77eb35409ff74d418bc7766894aab440"
+            },
+            "scores": {
+                "accuracy": 0.6446280991735537
+            },
+            "submission": {
+                "created": 1624224850,
+                "description": "data (University of Washington)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "kommalapatisahil"
             }
         },
         {
@@ -1199,80 +1555,6 @@
                 "num_total_submissions": 2,
                 "public": true,
                 "user_name": "aine05"
-            }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate.py:0x045df721ff2a436d814a011421f7a340 test:0x0b792c7dbeb14c82bf98978389a8eb85 predictions.json:0x90138f996c864119b5f139baa4ada800 \"python evaluate.py predictions.json test\" --request-cpus 1 --request-docker-image jupyter/tensorflow-notebook --request-memory 2g",
-                "bundle_type": "run",
-                "command": "python evaluate.py predictions.json test",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate.py",
-                        "child_uuid": "0xf5bb6699b8574935ae96f3869915f207",
-                        "parent_name": "evaluate.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x045df721ff2a436d814a011421f7a340"
-                    },
-                    {
-                        "child_path": "test",
-                        "child_uuid": "0xf5bb6699b8574935ae96f3869915f207",
-                        "parent_name": "test",
-                        "parent_path": "",
-                        "parent_uuid": "0x0b792c7dbeb14c82bf98978389a8eb85"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0xf5bb6699b8574935ae96f3869915f207",
-                        "parent_name": "roma.glushko-sample_submission-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x90138f996c864119b5f139baa4ada800"
-                    }
-                ],
-                "frozen": null,
-                "id": "0xf5bb6699b8574935ae96f3869915f207",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1624046645,
-                    "description": "{\"submit_id\": \"0xde79a353369d406b9cacdaaef4cde8a8\", \"submitter_id\": \"0x45f57c4a53964eae86b1752bf2b2c89a\", \"predict_id\": \"0x90138f996c864119b5f139baa4ada800\"}",
-                    "exclude_patterns": [],
-                    "failure_message": " Parent bundles failed: 0x90138f996c864119b5f139baa4ada800 (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles)",
-                    "name": "roma.glushko-sample_submission-results",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "jupyter/tensorflow-notebook",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "tags": [
-                        "eval-mnist-roman"
-                    ]
-                },
-                "owner": {
-                    "id": "0xc4d5327b6ec3447f956a334fde285eaa",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "failed",
-                "uuid": "0xf5bb6699b8574935ae96f3869915f207"
-            },
-            "scores": {
-                "accuracy": null
-            },
-            "submission": {
-                "created": 1624046645,
-                "description": "{\"submit_id\": \"0xde79a353369d406b9cacdaaef4cde8a8\", \"submitter_id\": \"0x45f57c4a53964eae86b1752bf2b2c89a\", \"predict_id\": \"0x90138f996c864119b5f139baa4ada800\"}",
-                "num_period_submissions": 0,
-                "num_total_submissions": 0,
-                "public": null,
-                "user_name": null
             }
         },
         {
@@ -2609,79 +2891,6 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0x045df721ff2a436d814a011421f7a340 test:0x0b792c7dbeb14c82bf98978389a8eb85 predictions.json:0x4747d0914fa749a7b77677e6f75314ad \"python evaluate.py predictions.json test\" --request-cpus 1 --request-docker-image jupyter/tensorflow-notebook --request-memory 2g",
-                "bundle_type": "run",
-                "command": "python evaluate.py predictions.json test",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate.py",
-                        "child_uuid": "0xd09d2bfdf2d74c0684b7cd62bff8de79",
-                        "parent_name": "evaluate.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x045df721ff2a436d814a011421f7a340"
-                    },
-                    {
-                        "child_path": "test",
-                        "child_uuid": "0xd09d2bfdf2d74c0684b7cd62bff8de79",
-                        "parent_name": "test",
-                        "parent_path": "",
-                        "parent_uuid": "0x0b792c7dbeb14c82bf98978389a8eb85"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0xd09d2bfdf2d74c0684b7cd62bff8de79",
-                        "parent_name": "as3nsi0-sample_submission-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x4747d0914fa749a7b77677e6f75314ad"
-                    }
-                ],
-                "frozen": null,
-                "id": "0xd09d2bfdf2d74c0684b7cd62bff8de79",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1624902252,
-                    "description": "{\"submit_id\": \"0x145b63632dbd4c5fbf6321d1ba181b86\", \"submitter_id\": \"0xdd47ef17fd584ce98655ee441a92aaf4\", \"predict_id\": \"0x4747d0914fa749a7b77677e6f75314ad\"}",
-                    "exclude_patterns": [],
-                    "name": "as3nsi0-sample_submission-results",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "jupyter/tensorflow-notebook",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "tags": [
-                        "eval-mnist-roman"
-                    ]
-                },
-                "owner": {
-                    "id": "0xc4d5327b6ec3447f956a334fde285eaa",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "created",
-                "uuid": "0xd09d2bfdf2d74c0684b7cd62bff8de79"
-            },
-            "scores": {
-                "accuracy": null
-            },
-            "submission": {
-                "created": 1624183591,
-                "description": "sample_submission (as3nsi0)",
-                "num_period_submissions": 1,
-                "num_total_submissions": 1,
-                "public": true,
-                "user_name": "as3nsi0"
-            }
-        },
-        {
-            "bundle": {
                 "args": "run evaluate.py:0x045df721ff2a436d814a011421f7a340 test:0x0b792c7dbeb14c82bf98978389a8eb85 predictions.json:0x0ebc2d38ec5c4789a46dfd58a6a3da48 \"python evaluate.py predictions.json test\" --request-cpus 1 --request-docker-image jupyter/tensorflow-notebook --request-memory 2g",
                 "bundle_type": "run",
                 "command": "python evaluate.py predictions.json test",
@@ -2756,79 +2965,6 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0x045df721ff2a436d814a011421f7a340 test:0x0b792c7dbeb14c82bf98978389a8eb85 predictions.json:0x2540c6023fdb4a969a1f291f7a46c834 \"python evaluate.py predictions.json test\" --request-cpus 1 --request-docker-image jupyter/tensorflow-notebook --request-memory 2g",
-                "bundle_type": "run",
-                "command": "python evaluate.py predictions.json test",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate.py",
-                        "child_uuid": "0xef90932ceb124f3aac1ea58035f5cf9b",
-                        "parent_name": "evaluate.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x045df721ff2a436d814a011421f7a340"
-                    },
-                    {
-                        "child_path": "test",
-                        "child_uuid": "0xef90932ceb124f3aac1ea58035f5cf9b",
-                        "parent_name": "test",
-                        "parent_path": "",
-                        "parent_uuid": "0x0b792c7dbeb14c82bf98978389a8eb85"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0xef90932ceb124f3aac1ea58035f5cf9b",
-                        "parent_name": "ximua00-sample_submission-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x2540c6023fdb4a969a1f291f7a46c834"
-                    }
-                ],
-                "frozen": null,
-                "id": "0xef90932ceb124f3aac1ea58035f5cf9b",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1624902274,
-                    "description": "{\"submit_id\": \"0xda1f1c710e634c1586870be8d01bb2a7\", \"submitter_id\": \"0x57961daa1d7445c897295effc18086f5\", \"predict_id\": \"0x2540c6023fdb4a969a1f291f7a46c834\"}",
-                    "exclude_patterns": [],
-                    "name": "ximua00-sample_submission-results",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "jupyter/tensorflow-notebook",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "tags": [
-                        "eval-mnist-roman"
-                    ]
-                },
-                "owner": {
-                    "id": "0xc4d5327b6ec3447f956a334fde285eaa",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "created",
-                "uuid": "0xef90932ceb124f3aac1ea58035f5cf9b"
-            },
-            "scores": {
-                "accuracy": null
-            },
-            "submission": {
-                "created": 1624192812,
-                "description": "sample-submission",
-                "num_period_submissions": 1,
-                "num_total_submissions": 1,
-                "public": true,
-                "user_name": "ximua00"
-            }
-        },
-        {
-            "bundle": {
                 "args": "run evaluate.py:0x045df721ff2a436d814a011421f7a340 test:0x0b792c7dbeb14c82bf98978389a8eb85 predictions.json:0x9dbba8919061449aaf9f3f6b85b1fb30 \"python evaluate.py predictions.json test\" --request-cpus 1 --request-docker-image jupyter/tensorflow-notebook --request-memory 2g",
                 "bundle_type": "run",
                 "command": "python evaluate.py predictions.json test",
@@ -2865,6 +3001,7 @@
                     "created": 1624902286,
                     "description": "{\"submit_id\": \"0x0b05482847294afcb3da0c3c2e278a6a\", \"submitter_id\": \"0xceca6e4885b14462af29054f2e36f43f\", \"predict_id\": \"0x9dbba8919061449aaf9f3f6b85b1fb30\"}",
                     "exclude_patterns": [],
+                    "failure_message": " Parent bundles failed: 0x9dbba8919061449aaf9f3f6b85b1fb30 (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles)",
                     "name": "KaustubhKulkarni-basic_augmented_1-results",
                     "request_cpus": 1,
                     "request_disk": "",
@@ -2885,7 +3022,7 @@
                 },
                 "permission": 2,
                 "permission_spec": "all",
-                "state": "created",
+                "state": "failed",
                 "uuid": "0x6a8770e3bbac4e748d56d99631f7306c"
             },
             "scores": {
@@ -2938,6 +3075,7 @@
                     "created": 1624902296,
                     "description": "{\"submit_id\": \"0x9ff13e9ae79746bfa401df3bc3476365\", \"submitter_id\": \"0xe5fa08b1994f4d8f9556ed0181941ab2\", \"predict_id\": \"0x811c9aa0c3c94a1b942524e0392caffc\"}",
                     "exclude_patterns": [],
+                    "failure_message": " Parent bundles failed: 0x811c9aa0c3c94a1b942524e0392caffc (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles)",
                     "name": "thtangb-data_aug-results",
                     "request_cpus": 1,
                     "request_disk": "",
@@ -2958,7 +3096,7 @@
                 },
                 "permission": 2,
                 "permission_spec": "all",
-                "state": "created",
+                "state": "failed",
                 "uuid": "0x5dd272580e864eb7b870d69b7af40892"
             },
             "scores": {
@@ -3011,6 +3149,7 @@
                     "created": 1624902306,
                     "description": "{\"submit_id\": \"0xee47e71c98694e0da81afb9b117ec8f8\", \"submitter_id\": \"0x6884741f88c343bc82d7b912fe3c57dc\", \"predict_id\": \"0x919d99478a5f4270b986fea621f102b8\"}",
                     "exclude_patterns": [],
+                    "failure_message": " Parent bundles failed: 0x919d99478a5f4270b986fea621f102b8 (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles)",
                     "name": "milowala-baseline-results",
                     "request_cpus": 1,
                     "request_disk": "",
@@ -3031,7 +3170,7 @@
                 },
                 "permission": 2,
                 "permission_spec": "all",
-                "state": "created",
+                "state": "failed",
                 "uuid": "0xac84cd15c6494e448adb5fcf86900130"
             },
             "scores": {
@@ -3044,79 +3183,6 @@
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "milowala"
-            }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate.py:0x045df721ff2a436d814a011421f7a340 test:0x0b792c7dbeb14c82bf98978389a8eb85 predictions.json:0xa1597806524d489597de4a551677c671 \"python evaluate.py predictions.json test\" --request-cpus 1 --request-docker-image jupyter/tensorflow-notebook --request-memory 2g",
-                "bundle_type": "run",
-                "command": "python evaluate.py predictions.json test",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate.py",
-                        "child_uuid": "0x1b1953c05fa2474ea7a7546201d04580",
-                        "parent_name": "evaluate.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x045df721ff2a436d814a011421f7a340"
-                    },
-                    {
-                        "child_path": "test",
-                        "child_uuid": "0x1b1953c05fa2474ea7a7546201d04580",
-                        "parent_name": "test",
-                        "parent_path": "",
-                        "parent_uuid": "0x0b792c7dbeb14c82bf98978389a8eb85"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0x1b1953c05fa2474ea7a7546201d04580",
-                        "parent_name": "sid4sal-sub-1-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0xa1597806524d489597de4a551677c671"
-                    }
-                ],
-                "frozen": null,
-                "id": "0x1b1953c05fa2474ea7a7546201d04580",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1624902317,
-                    "description": "{\"submit_id\": \"0xb7d18993fbe34db3800ad63f47886c16\", \"submitter_id\": \"0x1bfcfd1d6dad4b07a1e19a09b42e7141\", \"predict_id\": \"0xa1597806524d489597de4a551677c671\"}",
-                    "exclude_patterns": [],
-                    "name": "sid4sal-sub-1-results",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "jupyter/tensorflow-notebook",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "tags": [
-                        "eval-mnist-roman"
-                    ]
-                },
-                "owner": {
-                    "id": "0xc4d5327b6ec3447f956a334fde285eaa",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "created",
-                "uuid": "0x1b1953c05fa2474ea7a7546201d04580"
-            },
-            "scores": {
-                "accuracy": null
-            },
-            "submission": {
-                "created": 1624205344,
-                "description": "sub-1 (IIT Bombay)",
-                "num_period_submissions": 1,
-                "num_total_submissions": 1,
-                "public": true,
-                "user_name": "sid4sal"
             }
         },
         {
@@ -3157,6 +3223,7 @@
                     "created": 1624902329,
                     "description": "{\"submit_id\": \"0x23a460caeee5467798205179b2d29e20\", \"submitter_id\": \"0x4f6548388b5e4d84b6cedac6c10d2e9d\", \"predict_id\": \"0xe00c80687d2c4659b1eb41b8548cf227\"}",
                     "exclude_patterns": [],
+                    "failure_message": " Parent bundles failed: 0xe00c80687d2c4659b1eb41b8548cf227 (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles)",
                     "name": "Tartan_Grad-Pool_v_1_c_m-results",
                     "request_cpus": 1,
                     "request_disk": "",
@@ -3177,7 +3244,7 @@
                 },
                 "permission": 2,
                 "permission_spec": "all",
-                "state": "created",
+                "state": "failed",
                 "uuid": "0x0532acdbcd984837af2b5c42eebda391"
             },
             "scores": {
@@ -3230,6 +3297,7 @@
                     "created": 1624902341,
                     "description": "{\"submit_id\": \"0x04f550b36af64fbb9d1024f135905543\", \"submitter_id\": \"0x534fe86888ef4df5ae422a79a64efb46\", \"predict_id\": \"0xfa76489febff403796d0c2510c10dc1f\"}",
                     "exclude_patterns": [],
+                    "failure_message": " Parent bundles failed: 0xfa76489febff403796d0c2510c10dc1f (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles)",
                     "name": "shadow_fax1024-first_data-results",
                     "request_cpus": 1,
                     "request_disk": "",
@@ -3250,7 +3318,7 @@
                 },
                 "permission": 2,
                 "permission_spec": "all",
-                "state": "created",
+                "state": "failed",
                 "uuid": "0x5572c3d55f0f480496d7af9d90b868bd"
             },
             "scores": {
@@ -3303,6 +3371,7 @@
                     "created": 1624902358,
                     "description": "{\"submit_id\": \"0x843c94d23d734521a2a085fa78726feb\", \"submitter_id\": \"0x9e57ce8ae6254b4ab2410fff680cbf11\", \"predict_id\": \"0x932649df3bfe4cf984ab4a960c08e072\"}",
                     "exclude_patterns": [],
+                    "failure_message": " Parent bundles failed: 0x932649df3bfe4cf984ab4a960c08e072 (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles)",
                     "name": "Alican-submission-4-results",
                     "request_cpus": 1,
                     "request_disk": "",
@@ -3323,7 +3392,7 @@
                 },
                 "permission": 2,
                 "permission_spec": "all",
-                "state": "created",
+                "state": "failed",
                 "uuid": "0x916492c033b242dd87e7c21a0885a963"
             },
             "scores": {
@@ -3376,6 +3445,7 @@
                     "created": 1624902370,
                     "description": "{\"submit_id\": \"0xc0667472ff4a4056bcd5f824e9a25558\", \"submitter_id\": \"0x67abbb4a043645be93105a767569e779\", \"predict_id\": \"0xade534d076e04887915ba629b8be6f81\"}",
                     "exclude_patterns": [],
+                    "failure_message": " Parent bundles failed: 0xade534d076e04887915ba629b8be6f81 (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles)",
                     "name": "Puneeth_b-submission-1-results",
                     "request_cpus": 1,
                     "request_disk": "",
@@ -3396,7 +3466,7 @@
                 },
                 "permission": 2,
                 "permission_spec": "all",
-                "state": "created",
+                "state": "failed",
                 "uuid": "0xe3440e6a98884fd1aba8d80b667da10d"
             },
             "scores": {
@@ -3449,6 +3519,7 @@
                     "created": 1624902383,
                     "description": "{\"submit_id\": \"0x12008fc8d8ff4d02907b029076d22681\", \"submitter_id\": \"0xd4e1ab407b544305bd2529224b34b742\", \"predict_id\": \"0x2109eeb0fe44491398061c70a1067d17\"}",
                     "exclude_patterns": [],
+                    "failure_message": " Parent bundles failed: 0x2109eeb0fe44491398061c70a1067d17 (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles)",
                     "name": "nialloh23-augment_data-results",
                     "request_cpus": 1,
                     "request_disk": "",
@@ -3469,7 +3540,7 @@
                 },
                 "permission": 2,
                 "permission_spec": "all",
-                "state": "created",
+                "state": "failed",
                 "uuid": "0xf650338c45634926a959a589eb43d965"
             },
             "scores": {
@@ -3482,79 +3553,6 @@
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "nialloh23"
-            }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate.py:0x045df721ff2a436d814a011421f7a340 test:0x0b792c7dbeb14c82bf98978389a8eb85 predictions.json:0xecf28667736649b5a0ef13c0568b3c85 \"python evaluate.py predictions.json test\" --request-cpus 1 --request-docker-image jupyter/tensorflow-notebook --request-memory 2g",
-                "bundle_type": "run",
-                "command": "python evaluate.py predictions.json test",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate.py",
-                        "child_uuid": "0x77eb35409ff74d418bc7766894aab440",
-                        "parent_name": "evaluate.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x045df721ff2a436d814a011421f7a340"
-                    },
-                    {
-                        "child_path": "test",
-                        "child_uuid": "0x77eb35409ff74d418bc7766894aab440",
-                        "parent_name": "test",
-                        "parent_path": "",
-                        "parent_uuid": "0x0b792c7dbeb14c82bf98978389a8eb85"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0x77eb35409ff74d418bc7766894aab440",
-                        "parent_name": "kommalapatisahil-data-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0xecf28667736649b5a0ef13c0568b3c85"
-                    }
-                ],
-                "frozen": null,
-                "id": "0x77eb35409ff74d418bc7766894aab440",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1624902397,
-                    "description": "{\"submit_id\": \"0x3265fbde542b403c8c4d6f2c6f0eab86\", \"submitter_id\": \"0x1edf4da0917f4983a5b96f4f8d61ffce\", \"predict_id\": \"0xecf28667736649b5a0ef13c0568b3c85\"}",
-                    "exclude_patterns": [],
-                    "name": "kommalapatisahil-data-results",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "jupyter/tensorflow-notebook",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "tags": [
-                        "eval-mnist-roman"
-                    ]
-                },
-                "owner": {
-                    "id": "0xc4d5327b6ec3447f956a334fde285eaa",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "created",
-                "uuid": "0x77eb35409ff74d418bc7766894aab440"
-            },
-            "scores": {
-                "accuracy": null
-            },
-            "submission": {
-                "created": 1624224850,
-                "description": "data (University of Washington)",
-                "num_period_submissions": 1,
-                "num_total_submissions": 1,
-                "public": true,
-                "user_name": "kommalapatisahil"
             }
         },
         {
@@ -3595,6 +3593,7 @@
                     "created": 1624902409,
                     "description": "{\"submit_id\": \"0xa0006bc086a940b3b282ad8d6442543c\", \"submitter_id\": \"0x5e853f2274164bdda6f8a98b17429cb1\", \"predict_id\": \"0xb008fd21242642e1b57c0ff8f3287452\"}",
                     "exclude_patterns": [],
+                    "failure_message": " Parent bundles failed: 0xb008fd21242642e1b57c0ff8f3287452 (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles)",
                     "name": "ssampa17-ssampa_baseline-results",
                     "request_cpus": 1,
                     "request_disk": "",
@@ -3615,7 +3614,7 @@
                 },
                 "permission": 2,
                 "permission_spec": "all",
-                "state": "created",
+                "state": "failed",
                 "uuid": "0x6a94afdb7d0f4d45824f05f5c6d13d50"
             },
             "scores": {
@@ -3668,6 +3667,7 @@
                     "created": 1624902421,
                     "description": "{\"submit_id\": \"0x3a3e6865b73d42c8b6cc2f392eff00ba\", \"submitter_id\": \"0xfcd944f99d554dab8c21ac91ce4e651c\", \"predict_id\": \"0xb8346dd99f254083a6c8371bd942a6c1\"}",
                     "exclude_patterns": [],
+                    "failure_message": " Parent bundles failed: 0xb8346dd99f254083a6c8371bd942a6c1 (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles)",
                     "name": "rtorzyn-rtdatacentric-results",
                     "request_cpus": 1,
                     "request_disk": "",
@@ -3688,7 +3688,7 @@
                 },
                 "permission": 2,
                 "permission_spec": "all",
-                "state": "created",
+                "state": "failed",
                 "uuid": "0xc2db659491a04cf3b30d4c37bdf680e3"
             },
             "scores": {
@@ -3741,6 +3741,7 @@
                     "created": 1624902433,
                     "description": "{\"submit_id\": \"0x1173c81a0fb347b288f74b2441d4f8c0\", \"submitter_id\": \"0x6c165838b2e4410bafb34eb9e3898590\", \"predict_id\": \"0xff36c15083af414d9fdd1c0a83c2ef2d\"}",
                     "exclude_patterns": [],
+                    "failure_message": " Parent bundles failed: 0xff36c15083af414d9fdd1c0a83c2ef2d (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles)",
                     "name": "july007-data-results",
                     "request_cpus": 1,
                     "request_disk": "",
@@ -3761,7 +3762,7 @@
                 },
                 "permission": 2,
                 "permission_spec": "all",
-                "state": "created",
+                "state": "failed",
                 "uuid": "0x7300629eba354584bbaf74513f0fc347"
             },
             "scores": {
@@ -6106,8 +6107,8 @@
             "submission": {
                 "created": 1624711581,
                 "description": "yuv_handlabled_testing_v1",
-                "num_period_submissions": 1,
-                "num_total_submissions": 1,
+                "num_period_submissions": 2,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "yuvaramsingh"
             }
@@ -6622,7 +6623,153 @@
                 "public": true,
                 "user_name": "taher-dohadwala"
             }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0x045df721ff2a436d814a011421f7a340 test:0x0b792c7dbeb14c82bf98978389a8eb85 predictions.json:0xe80383ae20de4b72987696e3f0bc521a \"python evaluate.py predictions.json test\" --request-cpus 1 --request-docker-image jupyter/tensorflow-notebook --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate.py predictions.json test",
+                "data_hash": null,
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0xafd6cac345e141eca7cf645f5bc81df5",
+                        "parent_name": "evaluate.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x045df721ff2a436d814a011421f7a340"
+                    },
+                    {
+                        "child_path": "test",
+                        "child_uuid": "0xafd6cac345e141eca7cf645f5bc81df5",
+                        "parent_name": "test",
+                        "parent_path": "",
+                        "parent_uuid": "0x0b792c7dbeb14c82bf98978389a8eb85"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xafd6cac345e141eca7cf645f5bc81df5",
+                        "parent_name": "yuvaramsingh-u2_v2-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xe80383ae20de4b72987696e3f0bc521a"
+                    }
+                ],
+                "frozen": null,
+                "id": "0xafd6cac345e141eca7cf645f5bc81df5",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1624909338,
+                    "description": "{\"submit_id\": \"0x42ec9bc9acc441f7a958df0a4b702d14\", \"submitter_id\": \"0x4e0fa10c452244978e6c54c53978a45e\", \"predict_id\": \"0xe80383ae20de4b72987696e3f0bc521a\"}",
+                    "exclude_patterns": [],
+                    "name": "yuvaramsingh-u2_v2-results",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "jupyter/tensorflow-notebook",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "tags": [
+                        "eval-mnist-roman"
+                    ]
+                },
+                "owner": {
+                    "id": "0xc4d5327b6ec3447f956a334fde285eaa",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "created",
+                "uuid": "0xafd6cac345e141eca7cf645f5bc81df5"
+            },
+            "scores": {
+                "accuracy": null
+            },
+            "submission": {
+                "created": 1624908768,
+                "description": "yuvaramsingh version 2",
+                "num_period_submissions": 2,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "yuvaramsingh"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0x045df721ff2a436d814a011421f7a340 test:0x0b792c7dbeb14c82bf98978389a8eb85 predictions.json:0x4677f6c7bbb242d693b579f250c9b491 \"python evaluate.py predictions.json test\" --request-cpus 1 --request-docker-image jupyter/tensorflow-notebook --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate.py predictions.json test",
+                "data_hash": null,
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x1978ec5832474c5195a7b6e7a27b54f1",
+                        "parent_name": "evaluate.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x045df721ff2a436d814a011421f7a340"
+                    },
+                    {
+                        "child_path": "test",
+                        "child_uuid": "0x1978ec5832474c5195a7b6e7a27b54f1",
+                        "parent_name": "test",
+                        "parent_path": "",
+                        "parent_uuid": "0x0b792c7dbeb14c82bf98978389a8eb85"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x1978ec5832474c5195a7b6e7a27b54f1",
+                        "parent_name": "W1za2d0Z-test-submission-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x4677f6c7bbb242d693b579f250c9b491"
+                    }
+                ],
+                "frozen": null,
+                "id": "0x1978ec5832474c5195a7b6e7a27b54f1",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1624909351,
+                    "description": "{\"submit_id\": \"0xc5742905064043d797e8fd69b9c0e478\", \"submitter_id\": \"0xd59361cb7ffa42a09cf0b927ab257b85\", \"predict_id\": \"0x4677f6c7bbb242d693b579f250c9b491\"}",
+                    "exclude_patterns": [],
+                    "name": "W1za2d0Z-test-submission-results",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "jupyter/tensorflow-notebook",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "tags": [
+                        "eval-mnist-roman"
+                    ]
+                },
+                "owner": {
+                    "id": "0xc4d5327b6ec3447f956a334fde285eaa",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "created",
+                "uuid": "0x1978ec5832474c5195a7b6e7a27b54f1"
+            },
+            "scores": {
+                "accuracy": null
+            },
+            "submission": {
+                "created": 1624906714,
+                "description": "test-submission (W1za2d0Z)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "W1za2d0Z"
+            }
         }
     ],
-    "updated": 1624906217.46113
+    "updated": 1624909359.896994
 }
